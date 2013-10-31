@@ -1,6 +1,6 @@
 class Binary
     def initialize(binary)
-      @binary = binary
+      @binary = binary unless binary.to_s.match(/[^10]/)
     end
 
     def to_decimal
